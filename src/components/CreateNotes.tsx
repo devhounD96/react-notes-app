@@ -1,9 +1,13 @@
-import React from 'react'
+import * as React from 'react';
 
-const CreateNotes = () => {
-  return (
-    <div>CreateNotes</div>
-  )
+interface ICreateNotesProps {
 }
 
-export default CreateNotes
+const CreateNotes: React.FunctionComponent<ICreateNotesProps> = (props) => {
+  return (
+    <>
+    </>
+  );
+};
+
+export default CreateNotes;

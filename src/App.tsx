@@ -8,8 +8,8 @@ import NotesList from './components/NotesList';
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
     id: (new Date).toString(),
-    title: 'test title',
-    text: 'test text',
+    title: 'Meeting Overdue',
+    text: 'Client Meet Emaar',
     color: '#1bc4c4',
     date: (new Date).toString()
   }]);
@@ -19,7 +19,7 @@ function App() {
    <Container className='mt-5'>
     <Row>
       <Col>
-      <NotesList notes={notes}/>
+      <NotesList notes={notes} setNotes={setNotes}/>
       </Col>
     </Row>
    </Container>
